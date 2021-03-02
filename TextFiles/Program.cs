@@ -8,10 +8,11 @@ namespace TextFiles
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //string path = @"test.txt";
             string path = @"C:\HoGent\Gevorderd\Data\txt\test.txt";
-            using(StreamWriter sw=new StreamWriter(path,true)) //append use true
+            using (StreamWriter sw = new StreamWriter(path, true)) //append use true
             {
-                for(int i=1;i<11;i++)
+                for (int i = 1; i < 11; i++)
                 {
                     sw.WriteLine($"This is line {i} in the file");
                 }
